@@ -1,8 +1,8 @@
-function toDegree(num, degree){
+function calcToDegree(num, degree){
     if(degree > 1) {
-       return num * toDegree(num, degree - 1); 
+       return num * calcToDegree(num, degree - 1); 
     }
     return num; 
     
 }
-console.log(toDegree(7, 3));
+console.log(calcToDegree(7, 3));
